@@ -5,6 +5,14 @@ A Solana-compatible chain where a small neural network runs inside one transacti
 COGITO is a fork of Agave, Solana's validator client, with the SIMD-0714 prototype vector VM switched on: 512-bit vector instructions added to the VM that runs programs. With them a small Int8 neural network fits inside a single transaction. Draw a digit, one transaction is sent, the chain answers, and the compute units (CU, Solana's measure of work) and the signature sit on that transaction for anyone to read with Solana's own CLI.
 
 Not Solana mainnet. A fork we run. Every validator is ours, and the public reaches the chain through our public RPC. SIMD-0714 is a draft, not an adopted standard; we ran its prototype as it is and measured it. COGITO does not run large language models: a mind here is a small network that fits one transaction.
+
+## What a thought is
+
+- **a thought**: one transaction that runs a neural network once.
+- **a mind**: one neural-network program deployed on the chain.
+- **think**: to send that transaction.
+- **the bench**: where the old way and the new way run side by side on the same input and are measured.
+
 ## Repositories
 
 | Repository | Description |
