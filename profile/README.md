@@ -13,6 +13,14 @@ Not Solana mainnet. A fork we run. Every validator is ours, and the public reach
 - **think**: to send that transaction.
 - **the bench**: where the old way and the new way run side by side on the same input and are measured.
 
+## How it works
+
+1. The engine is Agave with the SIMD-0714 prototype vector VM. Every validator needs AVX-512; without it the engine does not start.
+2. A mind is an Int8 network, 256 inputs, 128 hidden, 16 outputs, written as machine code that uses the vector instructions. Each mind has a scalar twin with the same weights on today's instruction set.
+3. In the browser a drawing becomes 256 bytes. The browser makes a throwaway key, receives test gas from the faucet and sends one transaction to the mind.
+4. The chain runs the network inside that transaction and returns the answer. The answer, the compute units, the signature and an explorer link appear in place.
+5. Anyone reads the same number with the stock Solana CLI by pointing `solana confirm -v <signature>` at the RPC URL shown on the site.
+
 ## Repositories
 
 | Repository | Description |
