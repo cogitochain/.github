@@ -6,6 +6,8 @@ COGITO is a fork of Agave, Solana's validator client, with the SIMD-0714 prototy
 
 Not Solana mainnet. A fork we run. Every validator is ours, and the public reaches the chain through our public RPC. SIMD-0714 is a draft, not an adopted standard; we ran its prototype as it is and measured it. COGITO does not run large language models: a mind here is a small network that fits one transaction.
 
+The digit network takes 1,700 compute units as a vector program and 349,958 as its scalar twin, with the same weights and the same answer, on our network of 6 validators (the whitepaper's Measured table lists every condition and the command that reproduces it).
+
 ## Token and chain
 
 - At launch $COGITO is not this chain's gas. The chain runs on test gas from a faucet, and no wallet is needed to send a thought.
