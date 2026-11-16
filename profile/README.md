@@ -1,3 +1,14 @@
+<p align="center"><a href="https://cogito.run"><img src="assets/banner.png" width="100%" alt="COGITO"></a></p>
+
+<p align="center">
+  <a href="https://cogito.run"><img src="https://img.shields.io/badge/site-cogito.run-111111?style=flat-square" alt="Site"></a>
+  <a href="https://cogito.run/think"><img src="https://img.shields.io/badge/try-think-111111?style=flat-square" alt="Try it"></a>
+  <a href="https://x.com/cogitochain"><img src="https://img.shields.io/badge/X-%40cogitochain-111111?style=flat-square" alt="X"></a>
+  <a href="https://github.com/cogitochain/cogito"><img src="https://img.shields.io/badge/source-cogito-111111?style=flat-square" alt="Source"></a>
+  <a href="https://opensource.org/license/mit"><img src="https://img.shields.io/badge/license-MIT-111111?style=flat-square" alt="MIT licence"></a>
+  <a href="https://github.com/anza-xyz/agave"><img src="https://img.shields.io/badge/engine-Agave%20fork-111111?style=flat-square" alt="Agave fork"></a>
+</p>
+
 # COGITO
 
 A Solana-compatible chain where a small neural network runs inside one transaction, not on a server.
