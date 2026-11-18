@@ -21,7 +21,8 @@ The digit network takes 1,700 compute units as a vector program (1,850 for the w
 
 ## Token and chain
 
-- At launch $COGITO is not this chain's gas. The chain runs on test gas from a faucet, and no wallet is needed to send a thought.
+- $COGITO is an SPL token on Solana mainnet. CA: `Cogito6Ss5vhwAqjkrB5jVRr3GXwtmseJqZm9CyUy4di` ([Solscan](https://solscan.io/token/Cogito6Ss5vhwAqjkrB5jVRr3GXwtmseJqZm9CyUy4di))
+- The plan is for $COGITO to become this chain's gas and stake, with holders' balances at a stated slot carried into the chain; no date is set yet. Today the chain runs on test gas from a faucet, and no wallet is needed to send a thought.
 - Every thought is a transaction on the COGITO chain with its compute units on it.
 
 ## What a thought is
