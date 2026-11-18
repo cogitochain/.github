@@ -3,9 +3,9 @@
 <p align="center">
   <a href="https://cogito.run"><img src="https://img.shields.io/badge/site-cogito.run-111111?style=flat-square" alt="Site"></a>
   <a href="https://cogito.run/think"><img src="https://img.shields.io/badge/try-think-111111?style=flat-square" alt="Try it"></a>
-  <a href="https://x.com/cogitochain"><img src="https://img.shields.io/badge/X-%40cogitochain-111111?style=flat-square" alt="X"></a>
+  <a href="https://x.com/cogitochain"><img src="https://img.shields.io/badge/X-cogitochain-111111?style=flat-square" alt="X"></a>
   <a href="https://github.com/cogitochain/cogito"><img src="https://img.shields.io/badge/source-cogito-111111?style=flat-square" alt="Source"></a>
-  <a href="https://opensource.org/license/mit"><img src="https://img.shields.io/badge/license-MIT-111111?style=flat-square" alt="MIT licence"></a>
+  <a href="https://github.com/cogitochain/cogito#license"><img src="https://img.shields.io/badge/licenses-MIT%20%2F%20Apache%202.0-111111?style=flat-square" alt="Source licences"></a>
   <a href="https://github.com/anza-xyz/agave"><img src="https://img.shields.io/badge/engine-Agave%20fork-111111?style=flat-square" alt="Agave fork"></a>
 </p>
 
@@ -13,11 +13,11 @@
 
 A Solana-compatible chain where a small neural network runs inside one transaction, not on a server.
 
-COGITO is a fork of Agave, Solana's validator client, with the SIMD-0714 prototype vector VM switched on: 512-bit vector instructions added to the VM that runs programs. With them a small Int8 neural network fits inside a single transaction. Draw a digit, one transaction is sent, the chain answers, and the compute units (CU, Solana's measure of work) and the signature sit on that transaction for anyone to read with Solana's own CLI.
+COGITO is a fork of Agave, Solana's validator client, with the SIMD-0714 prototype vector VM switched on: 512-bit vector instructions added to the VM that runs programs. With them a small Int8 neural network fits inside a single transaction. Draw a digit, one transaction is sent, the chain answers, and the compute units (CU, Solana's measure of work) and the signature sit on that transaction for anyone to read with Solana's own CLI at https://rpc.cogito.run. The node keeps only the newest few hours of transactions, so read a fresh thought; the site keeps its own record of each one.
 
 Not Solana mainnet. A fork we run. Every validator is ours, and the public reaches the chain through our public RPC. SIMD-0714 is a draft, not an adopted standard; we ran its prototype as it is and measured it. COGITO does not run large language models: a mind here is a small network that fits one transaction.
 
-The digit network takes 1,700 compute units as a vector program and 349,958 as its scalar twin, with the same weights and the same answer, on the four-validator benchmark network (the whitepaper's Measured table lists every condition and the command that reproduces it).
+The digit network takes 1,700 compute units as a vector program (1,850 for the whole transaction as the site sends it) and 349,958 as its scalar twin, with the same weights and the same answer, on our network of 4 validators in 3 emulated locations on one server (the whitepaper's Measured table lists every condition). The public repository rebuilds both digit programs byte for byte and runs their checks; our measuring scripts are not public, and any thought on the network can be read with the stock CLI.
 
 ## Token and chain
 
